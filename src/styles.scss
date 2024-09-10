@@ -2,6 +2,10 @@
 $base-color: #5cdb95;
 $secondary-color: #05386b;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   //height: 100vh;
   min-height: 100%;
@@ -16,7 +20,7 @@ body {
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   position: relative;
-  height: 100vh;
+  //height: 100vh;
   width: 100%;
   //overflow: hidden;
   padding:0;
