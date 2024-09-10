@@ -11,12 +11,12 @@ import Typed from 'typed.js';
 export class AboutMeComponent {
   ngOnInit() {
     const options = {
-      strings: ['Software Developer', 'Game Developer'],
-      typeSpeed: 50,
-      backSpeed: 50,
+      strings: ['Software Developer', 'Game Developer', 'Data Enthusiast'],
+      typeSpeed: 40,
+      backSpeed: 40,
       loop: true,
     };
 
-    const typed = new Typed('.element', options);
+    const typed = new Typed('.iam-element', options);
   }
 }
