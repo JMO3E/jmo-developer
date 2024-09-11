@@ -16,9 +16,9 @@ body {
 }
 
 .background {
-  background: linear-gradient(132deg, $base-color, $secondary-color, #212335);
+  background: linear-gradient(135deg, $base-color, $secondary-color, #213235);
   background-size: 400% 400%;
-  animation: Gradient 15s ease infinite;
+  animation: Gradient 10s ease infinite;
   position: relative;
   //height: 100vh;
   width: 100%;
