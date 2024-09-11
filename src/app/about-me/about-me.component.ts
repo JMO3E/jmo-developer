@@ -12,8 +12,8 @@ export class AboutMeComponent {
   ngOnInit() {
     const options = {
       strings: ['Software Developer', 'Game Developer', 'Data Enthusiast'],
-      typeSpeed: 40,
-      backSpeed: 40,
+      typeSpeed: 50,
+      backSpeed: 50,
       loop: true,
     };
 

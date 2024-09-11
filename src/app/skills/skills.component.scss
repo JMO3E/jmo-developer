@@ -18,7 +18,7 @@
   .skills-cards-container {
     width: 75%;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    //margin-bottom: 2rem;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -42,7 +42,7 @@
 
       transition: transform 0.3s ease;
       will-change: transform;
-      transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+      transform: scale(1) translateZ(0);
 
       color: #f1f8fc;
       padding: 14px 16px;
@@ -65,7 +65,7 @@
     }
 
     .card:hover{
-      transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1.1, 1.1, 1.1);
+      transform: scale(1.05) translateZ(0);
     }
   }
 }

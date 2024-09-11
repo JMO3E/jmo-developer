@@ -21,6 +21,14 @@
         background: linear-gradient(135deg,hsla(0,0%,100%,0) 56%,#acacab 98%), linear-gradient(25deg,#f1f8fc 23%,#fff 60%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        .iam-element {
+          background-color: #5cdb95;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          border-bottom: 2px solid #5cdb95;
+          padding-bottom: 6px;
+        }
       }
     }
 
