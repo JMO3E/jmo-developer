@@ -1,0 +1,32 @@
+.landing-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .landing-info {
+    text-align: center;
+
+    .landing-title {
+      font-size: clamp(3.5rem, 8vw, 6rem);
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: -0.03rem;
+      padding: 0.9375rem;
+    }
+
+    h1 {
+      font-weight: 400;
+      font-size: 3.125rem;      // 50px
+      background: linear-gradient(135deg,hsla(0,0%,100%,0) 56%,#acacab 98%),linear-gradient(25deg,#f1f8fc 23%,#fff 60%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h3 {
+      margin-top: 16px;
+      font-weight: 600;
+      font-size: 1.5625;      // 25px
+    }
+  }
+}
