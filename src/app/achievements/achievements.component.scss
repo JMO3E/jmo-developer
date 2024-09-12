@@ -5,10 +5,12 @@
 
   .achievements-title-container{
     text-align: center;
+    margin: 4rem 0;
 
     .achievements-title{
-      font-weight: 400;
-      font-size: 3.125rem;      // 50px
+      font-weight: 600;
+      font-size: 3.125rem;
+      padding-bottom: 2px;
       background: linear-gradient(135deg,hsla(0,0%,100%,0) 56%,#acacab 98%),linear-gradient(25deg,#f1f8fc 23%,#fff 60%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -16,9 +18,8 @@
   }
 
   .achievements-cards-container{
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
-    //margin-bottom: 2rem;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -30,9 +31,9 @@
     align-content: space-evenly;
     align-items: center;
 
-    .card {
+    .achievement-card {
       width: 20rem;
-      height: 28rem;
+      height: 30rem;
 
       background: rgba(255, 255, 255, 0.2);
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -45,7 +46,7 @@
       transform: scale(1) translateZ(0);
 
       color: #f1f8fc;
-      padding: 14px 16px;
+      padding: 0.875rem 0.5rem;
       text-decoration: none;
 
       .card-content {
@@ -68,8 +69,8 @@
           margin: 3rem 0;
           .card-title {
             text-align: center;
-            font-size: 1.3rem;
-            font-weight: 300;
+            font-size: 1.2rem;
+            font-weight: 200;
           }
 
           .card-paragraph {
@@ -97,8 +98,7 @@
             font-size: 1.25rem;
             justify-content: center;
             line-height: 1em;
-            max-width: 80%;
-            margin: 0 10%;
+            max-width: 100%;
             //min-width: 140px;
             padding: 3px;
             text-decoration: none;
@@ -136,7 +136,7 @@
       }
     }
 
-    .card:hover{
+    .achievement-card:hover{
       transform: scale(1.05) translateZ(0);
     }
   }
