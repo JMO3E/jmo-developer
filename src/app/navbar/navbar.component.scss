@@ -35,3 +35,26 @@
     }
   }
 }
+
+/* (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* (tablets, 1068px and up) */
+@media only screen and (max-width: 1068px) {
+  .navbar-section{
+    .navbar-container {
+      .navbar-links {
+        .navbar-link {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/* (laptop, 1268px and up) */
+@media only screen and (max-width: 1268px) {
+
+}

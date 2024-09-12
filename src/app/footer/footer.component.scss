@@ -8,9 +8,9 @@
   -webkit-backdrop-filter: blur(9px);
 
   .footer-container {
-    width: 40%;
-    margin: 0 auto;
-    padding-top: 5rem;
+    // width: 40%;
+    // margin: 0 auto;
+    // padding-top: 5rem;
 
     .contact-container {
       display: flex;
@@ -50,12 +50,21 @@
       text-align: center;
 
       span {
-        font-weight: 100;
-        font-size: 1.25rem;      // 50px
+        font-weight: 600;
+        font-size: 1.5rem;      // 50px
         background: linear-gradient(135deg,hsla(0,0%,100%,0) 56%,#acacab 98%),linear-gradient(25deg,#f1f8fc 23%,#fff 60%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .copyright-container {
+    span {
+      font-weight: 800;
+      font-size: 2rem;
     }
   }
 }
