@@ -16,7 +16,7 @@ body {
 }
 
 .background {
-  background: linear-gradient(135deg, $base-color, $secondary-color, #213235);
+  background: linear-gradient(135deg, $base-color, $secondary-color 50%, #5B42F3);
   background-size: 400% 400%;
   animation: Gradient 10s ease infinite;
   position: relative;
@@ -25,87 +25,6 @@ body {
   //overflow: hidden;
   padding:0;
   margin:0px;
-}
-
-.circle {
-  position: absolute;
-  top: 40vh;
-  left: 85vw;
-  width: 10px;
-  height: 10px;
-  border: solid 1px #8a8a8ac3;
-  border-radius: 50%;
-  transform-origin: top left;
-  transform: scale(0) rotate(0deg) translate(-50%, -50%);
-  animation: cube 12s ease-in forwards infinite;
-}
-.circle:nth-child(2n) {
-  border-color: #8a8a8ac3;
-}
-.circle:nth-child(2) {
-  animation-delay: 2s;
-  left: 40vw;
-  top: 25vh;
-}
-.circle:nth-child(3) {
-  animation-delay: 4s;
-  left: 50vw;
-  top: 75vh;
-}
-.circle:nth-child(4) {
-  animation-delay: 6s;
-  left: 10vw;
-  top: 90vh;
-}
-.circle:nth-child(5) {
-  animation-delay: 8s;
-  left: 85vw;
-  top: 10vh;
-}
-.circle:nth-child(6) {
-  animation-delay: 10s;
-  left: 10vw;
-  top: 50vh;
-}
-
-.cube {
-  position: absolute;
-  top: 80vh;
-  left: 45vw;
-  width: 10px;
-  height: 10px;
-  border: solid 1px #848484;
-  transform-origin: top left;
-  transform: scale(0) rotate(0deg) translate(-50%, -50%);
-  animation: cube 12s ease-in forwards infinite;
-}
-.cube:nth-child(2n) {
-  border-color: #8a8a8ac3;
-}
-.cube:nth-child(2) {
-  animation-delay: 2s;
-  left: 25vw;
-  top: 40vh;
-}
-.cube:nth-child(3) {
-  animation-delay: 4s;
-  left: 75vw;
-  top: 50vh;
-}
-.cube:nth-child(4) {
-  animation-delay: 6s;
-  left: 90vw;
-  top: 10vh;
-}
-.cube:nth-child(5) {
-  animation-delay: 8s;
-  left: 10vw;
-  top: 85vh;
-}
-.cube:nth-child(6) {
-  animation-delay: 10s;
-  left: 50vw;
-  top: 10vh;
 }
 
 @keyframes Gradient {
@@ -117,15 +36,5 @@ body {
   }
   100% {
     background-position: 0% 50%;
-  }
-}
-@keyframes cube {
-  from {
-    transform: scale(0) rotate(0deg) translate(-50%, -50%);
-    opacity: 1;
-  }
-  to {
-    transform: scale(20) rotate(960deg) translate(-50%, -50%);
-    opacity: 0;
   }
 }

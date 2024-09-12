@@ -1,34 +1,25 @@
 .aboutme-section {
-  display: flex;
-  justify-content: center;
-
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(9px);
 
   .aboutme-container {
-    width: 50%;
     margin: 5rem;
+    width: 75%;
 
-    .title-container {
-      text-align: center;
+    .aboutme-title {
+      font-size: 2rem;
+      background: linear-gradient(135deg,hsla(0,0%,100%,0) 56%,#acacab 98%), linear-gradient(25deg,#f1f8fc 23%,#fff 60%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 
-      .title {
-        font-size: 2rem;
-        font-weight: 800;
-        line-height: 1.125;
-        background: linear-gradient(135deg,hsla(0,0%,100%,0) 56%,#acacab 98%), linear-gradient(25deg,#f1f8fc 23%,#fff 60%);
+      .iam-element {
+        background-color: #5cdb95;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-
-        .iam-element {
-          background-color: #5cdb95;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          border-bottom: 2px solid #5cdb95;
-          padding-bottom: 6px;
-        }
+        border-bottom: 2px solid #5cdb95;
+        padding-bottom: 2px;
       }
     }
 
@@ -40,6 +31,46 @@
         font-weight: 400;
         line-height: 1.25;
       }
+    }
+  }
+}
+
+/* (tablets, 768px and up) */
+@media only screen and (max-width: 600px) {
+  .aboutme-section {
+    .aboutme-container {
+      margin: 1rem;
+      padding: 2rem 0;
+
+      .aboutme-title {
+        font-size: 1.4rem;
+      }
+
+      .paragraph-container {
+
+        .paragraph {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
+/* (tablets, 1068px and up) */
+@media only screen and (min-width: 1000px) {
+  .aboutme-section {
+    .aboutme-container {
+      width: 90%;
+      padding: 2rem 0;
+    }
+  }
+}
+
+/* (laptop, 1268px and up) */
+@media only screen and (max-width: 1200px) {
+  .aboutme-section {
+    .aboutme-container {
+      margin: 1rem;
     }
   }
 }
