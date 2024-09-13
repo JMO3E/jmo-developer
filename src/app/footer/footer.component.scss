@@ -8,9 +8,6 @@
   -webkit-backdrop-filter: blur(9px);
 
   .footer-container {
-    // width: 40%;
-    // margin: 0 auto;
-    // padding-top: 5rem;
 
     .contact-container {
       display: flex;
@@ -31,12 +28,8 @@
         transform: scale(1) translateZ(0);
 
         .icon {
-          background: linear-gradient(135deg,hsla(0,0%,100%,0) 56%,#acacab 98%),linear-gradient(25deg,#f1f8fc 23%,#fff 60%);
-          -webkit-background-clip: text;
-          -moz-background-clip: text;
-          background-clip: text;
-          -webkit-text-fill-color: transparent;
           font-size: 2rem;
+          color: white;
         }
       }
 
@@ -51,7 +44,7 @@
 
       span {
         font-weight: 600;
-        font-size: 1.5rem;      // 50px
+        font-size: 1.5rem;
         background: linear-gradient(135deg,hsla(0,0%,100%,0) 56%,#acacab 98%),linear-gradient(25deg,#f1f8fc 23%,#fff 60%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -61,10 +54,14 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .copyright-container {
-    span {
-      font-weight: 800;
-      font-size: 2rem;
+  .footer-section {
+    .footer-container {
+      .copyright-container {
+        span {
+          font-weight: 700;
+          font-size: 1rem;
+        }
+      }
     }
   }
 }

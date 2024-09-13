@@ -20,7 +20,7 @@
 
   .skill-card {
     width: 20rem;
-    height: 24rem;
+    height: 20rem;
 
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -40,27 +40,46 @@
       text-align: center;
       margin-top: 1rem;
       margin-bottom: 1rem;
-      font-weight: 300;
 
       h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        font-weight: 600;
       }
     }
 
     .skill-card-content {
-      font-size: 1.1rem;
-      font-weight: 100;
+      font-size: 1.2rem;
+      font-weight: 400;
 
       li {
-        padding-bottom: 0.4rem;
+        // width: 60%;
+        // margin: 0 auto;
+        // margin-bottom: 1rem;
+        list-style-type:none;
+        // display: flex;
+        // background-color: rgb(5, 6, 45);
+        // border: 0;
+        // border-radius: 0.5rem;
+        // box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+
+        //justify-content: space-evenly;
+        //justify-items: center;
+        //align-content: space-evenly;
+        // align-items: center;
+        // font-size: 1.2rem;
+
+        .icon-images {
+          width: 2.2rem;
+        }
       }
+
     }
   }
-
   .skill-card:hover{
     transform: scale(1.05) translateZ(0);
   }
 }
+
 
 @media only screen and (max-width: 600px) {
   .skills-title{
