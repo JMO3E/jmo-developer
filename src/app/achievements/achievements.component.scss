@@ -63,7 +63,8 @@
       }
 
       .card-button {
-        margin: 3.5rem 0;
+        margin: 3rem auto;
+        width: 80%;
 
         .button-credential {
           align-items: center;
@@ -79,7 +80,7 @@
           font-size: 1.25rem;
           justify-content: center;
           line-height: 1em;
-          max-width: 100%;
+          //max-width: 100%;
           //min-width: 140px;
           padding: 3px;
           text-decoration: none;
