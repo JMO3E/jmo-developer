@@ -1,40 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+// Main Colors
 $base-color: #5cdb95;
 $secondary-color: #05386b;
+$white-color: #f1f8fc;
 
-html {
-  scroll-behavior: smooth;
+$transparent-color: rgba(255, 255, 255, 0.2);
+
+%default-container-style {
+  background: $transparent-color;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
 }
 
-body {
-  //height: 100vh;
-  min-height: 100%;
-  width: 100%;
-
-  margin: 0px !important;
-  padding: 0px !important;
-}
-
-.background {
-  background: linear-gradient(135deg, $base-color, $secondary-color 50%, #5B42F3);
-  background-size: 400% 400%;
-  animation: Gradient 10s ease infinite;
-  position: relative;
-  //height: 100vh;
-  width: 100%;
-  //overflow: hidden;
-  padding:0;
-  margin:0px;
-}
-
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+%white-font-style {
+  background: linear-gradient(135deg,hsla(0,0%,100%,0) 56%,#acacab 98%),linear-gradient(25deg,#f1f8fc 23%,#fff 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

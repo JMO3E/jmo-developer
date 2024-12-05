@@ -1,54 +1,41 @@
-.footer-section {
+@import '../../styles.scss';
+
+.footer-section-style {
   height: 20rem;
   margin-top: 4rem;
 
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
+  @extend %default-container-style;
 
-  .footer-container {
+  .contact-container-style {
+    list-style-type: none;
+    padding: 1.25rem 3.75rem;
+    overflow: hidden;
 
-    .contact-container {
-      display: flex;
-      justify-content: space-evenly;
-      list-style-type: none;
-      margin: 0;
-      padding: 1.25rem 3.75rem;
-      overflow: hidden;
+    .contact-button-style {
+      padding: 0.875rem 1rem;
+      text-decoration: none;
 
-      .contact-button {
-        display: block;
-        text-align: center;
-        padding: 0.875rem 1rem;
-        text-decoration: none;
+      transition: transform 0.3s ease;
+      transform: scale(1) translateZ(0);
 
-        transition: transform 0.3s ease;
-        will-change: transform;
-        transform: scale(1) translateZ(0);
-
-        .icon {
-          font-size: 2rem;
-          color: white;
-        }
-      }
-
-      .contact-button:hover {
-        cursor: pointer;
-        transform: scale(1.2) translateZ(0);
+      .icon {
+        font-size: 2rem;
+        color: white;
       }
     }
 
-    .copyright-container {
-      text-align: center;
+    .contact-button-style:hover {
+      cursor: pointer;
+      transform: scale(1.2) translateZ(0);
+    }
+  }
 
-      span {
-        font-weight: 600;
-        font-size: 1.5rem;
-        background: linear-gradient(135deg,hsla(0,0%,100%,0) 56%,#acacab 98%),linear-gradient(25deg,#f1f8fc 23%,#fff 60%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
+  .copyright-container-style {
+    span {
+      font-weight: 600;
+      font-size: 1.5rem;
+
+      @extend %white-font-style;
     }
   }
 }
@@ -56,7 +43,7 @@
 @media only screen and (max-width: 600px) {
   .footer-section {
     .footer-container {
-      .copyright-container {
+      .copyright-container-style {
         span {
           font-weight: 700;
           font-size: 1rem;
