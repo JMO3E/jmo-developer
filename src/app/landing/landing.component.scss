@@ -1,3 +1,5 @@
+@import '../../styles.scss';
+
 .landing-section {
   height: 100vh;
 
@@ -16,8 +18,6 @@
   }
 
   h1 {
-    background: linear-gradient(135deg,hsla(0,0%,100%,0) 56%,#acacab 98%),linear-gradient(25deg,#f1f8fc 23%,#fff 60%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @extend %white-font-style;
   }
 }

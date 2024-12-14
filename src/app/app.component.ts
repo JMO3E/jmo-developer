@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Location } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LandingComponent } from './landing/landing.component';
 import { FooterComponent } from './footer/footer.component';
@@ -13,7 +12,6 @@ import { AchievementsComponent } from './achievements/achievements.component';
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
     NavbarComponent,
     LandingComponent,
     FooterComponent,

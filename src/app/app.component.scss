@@ -1,17 +1,35 @@
-.header-container {
-  margin: 0;
-  padding: 0;
+@import '../styles.scss';
 
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
+html {
+  scroll-behavior: smooth;
 }
 
-.main-container {
+body {
+  min-height: 100%;
   width: 100%;
+
+  margin: 0px !important;
+  padding: 0px !important;
 }
 
-.footer-container {
-  width: 100%;
+.header-style {
+  @extend %default-container-style;
+}
+
+.bg-style{
+  background: linear-gradient(135deg, $base-color, $secondary-color 50%, #5B42F3);
+  background-size: 400% 400%;
+  animation: Gradient 10s ease infinite;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

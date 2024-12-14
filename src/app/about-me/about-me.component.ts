@@ -11,7 +11,7 @@ import Typed from 'typed.js';
 export class AboutMeComponent {
   ngOnInit() {
     const options = {
-      strings: ['Software Developer', 'Game Developer', 'Data Enthusiast'],
+      strings: ['Software Developer', 'Data Enthusiast'],
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
