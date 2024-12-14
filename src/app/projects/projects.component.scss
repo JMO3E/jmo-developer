@@ -1,134 +1,66 @@
-.project-title{
+@import '../../styles.scss';
+
+.project-title-style{
   font-weight: 600;
   font-size: 3rem;
-  padding-bottom: 2px;      // 50px
-  background: linear-gradient(135deg,hsla(0,0%,100%,0) 56%,#acacab 98%),linear-gradient(25deg,#f1f8fc 23%,#fff 60%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  padding-bottom: 2px;
+
+  @extend %white-font-style;
 }
 
-.projects-cards-container{
-  // display: grid;
-  // grid-template-columns: repeat(3, 1fr);
-  // grid-auto-rows: auto;
-  grid-gap: 4rem;
+.project-card-style {
+  width: 20rem;
+  height: 30rem;
 
-  justify-content: space-evenly;
-  justify-items: center;
-  align-content: space-evenly;
-  align-items: center;
+  @extend %default-container-style;
 
-  .project-card {
-    width: 20rem;
-    height: 30rem;
+  transition: transform 0.3s ease;
+  transform: scale(1) translateZ(0);
 
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 16px;
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
+  padding: 0.875rem 0.5rem;
+  text-decoration: none;
 
-    transition: transform 0.3s ease;
-    will-change: transform;
-    transform: scale(1) translateZ(0);
+  .card-content {
+    padding: 1rem;
 
-    color: #f1f8fc;
-    padding: 0.875rem 0.5rem;
-    text-decoration: none;
-
-    .card-content {
-      padding: 1rem;
-
-      .card-image {
-        img {
-          height: 9rem;
-          width: 100%;
-          border-radius: 12px;
-        }
-      }
-
-      .card-info {
-        height: 9.4rem;
-        .card-title {
-          text-align: center;
-          font-size: 1.4rem;
-          margin-top: 1rem;
-          margin-bottom: 1.5rem;
-          font-weight: 600;
-        }
-
-        .card-paragraph {
-          color: #f1f8fc;
-          font-size: 1rem;
-          font-weight: 400;
-          line-height: 1.25;
-        }
-      }
-
-      .card-button {
-        margin: 0 auto;
-        margin-top: 2rem;
-        width: 80%;
-
-        .button-credential {
-          align-items: center;
-          text-align: center;
-          background-image: linear-gradient(144deg,#5cdb95, #5B42F3 50%,#05386b);
-          border: 0;
-          border-radius: 0.5rem;
-          box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-          box-sizing: border-box;
-          color: #FFFFFF;
-          display: flex;
-          font-family: Phantomsans, sans-serif;
-          font-size: 1.25rem;
-          justify-content: center;
-          line-height: 1em;
-          //max-width: 100%;
-          //min-width: 140px;
-          padding: 3px;
-          text-decoration: none;
-          user-select: none;
-          -webkit-user-select: none;
-          touch-action: manipulation;
-          white-space: nowrap;
-          cursor: pointer;
-        }
-        .button-credential:active,
-        .button-credential:hover {
-          outline: 0;
-        }
-
-        .button-credential span {
-          background-color: rgb(5, 6, 45);
-          padding: 16px 24px;
-          border-radius: 6px;
-          width: 100%;
-          height: 100%;
-          transition: 300ms;
-        }
-
-        .button-credential:hover span {
-          background: none;
-        }
-
-        @media (min-width: 768px) {
-          .button-credential {
-            font-size: 24px;
-            min-width: 196px;
-          }
-        }
+    .card-image {
+      img {
+        height: 9rem;
+        width: 100%;
+        border-radius: 12px;
       }
     }
-  }
 
-  .project-card:hover{
-    transform: scale(1.05) translateZ(0);
+    .card-info {
+      height: 9.4rem;
+      .card-title {
+        text-align: center;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+      }
+
+      .card-paragraph {
+        color: #f1f8fc;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.25;
+      }
+    }
+
+    .card-button {
+      @extend %button-credential-style;
+    }
   }
+}
+
+.project-card-style:hover{
+  transform: scale(1.05) translateZ(0);
 }
 
 @media only screen and (max-width: 600px) {
-  .project-title{
+  .project-title-style{
     font-size: 2.5rem;
   }
 }

@@ -1,50 +1,45 @@
-.navbar-section{
+@import '../../styles.scss';
 
-  .navbar-toggler {
-    margin: 0 auto;
-  }
-
-  .navbar-container {
-    //display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    margin: 0;
-    padding: 1.25rem;
-    overflow: hidden;
-
-    .navbar-links {
-      .navbar-link {
-        display: block;
-        color: #f1f8fc;
-        font-size: 1.25rem;
-        font-weight: 600;
-        text-align: center;
-        padding: 0.875rem 3.75rem;
-        text-decoration: none;
-
-        transition: transform 0.3s ease;
-        will-change: transform;
-        transform: scale(1) translateZ(0);
-      }
-
-      .navbar-link:hover {
-        color: #5cdb95;
-        cursor: pointer;
-        transform: scale(1.05) translateZ(0);
-      }
-    }
-  }
+.dropdown-toggle::after {
+  color: $white-color;
 }
 
-/* (tablets, 1068px and up) */
-@media only screen and (max-width: 1068px) {
-  .navbar-section{
-    .navbar-container {
-      .navbar-links {
-        .navbar-link {
-          font-size: 1rem;
-        }
-      }
-    }
+.navbar-toggler {
+  background-color: $white-color;
+  border: none;
+}
+
+.navbar-container {
+  max-width: 1800px;
+}
+
+.navbar-container-links {
+  max-width: 1200px;
+  font-size: 1rem;
+}
+
+.navbar-link-style {
+  color: $white-color;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.875rem 3.75rem;
+
+  transition: transform 0.3s ease;
+  transform: scale(1) translateZ(0);
+}
+
+.navbar-link-style:hover {
+  color: $base-color;
+  cursor: pointer;
+  transform: scale(1.05) translateZ(0);
+}
+
+.nav-item {
+  border-bottom: 1px solid $base-color;
+}
+
+@media (min-width: 1024px) {
+  .nav-item {
+    border-bottom: 0px;
   }
 }
