@@ -3,7 +3,6 @@ import Typed from 'typed.js';
 
 @Component({
   selector: 'app-about-me',
-  standalone: true,
   imports: [],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss',
@@ -11,7 +10,7 @@ import Typed from 'typed.js';
 export class AboutMeComponent {
   ngOnInit() {
     const options = {
-      strings: ['Software Developer', 'Data Enthusiast'],
+      strings: ['Software Developer', 'IOT Enthusiast'],
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
