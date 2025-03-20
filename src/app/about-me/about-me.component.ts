@@ -3,7 +3,6 @@ import Typed from 'typed.js';
 
 @Component({
   selector: 'app-about-me',
-  standalone: true,
   imports: [],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss',

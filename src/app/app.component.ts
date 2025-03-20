@@ -9,19 +9,18 @@ import { ProjectsComponent } from './projects/projects.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [
-    NavbarComponent,
-    LandingComponent,
-    FooterComponent,
-    AboutMeComponent,
-    SkillsComponent,
-    ProjectsComponent,
-    AchievementsComponent,
-  ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+    selector: 'app-root',
+    imports: [
+        NavbarComponent,
+        LandingComponent,
+        FooterComponent,
+        AboutMeComponent,
+        SkillsComponent,
+        ProjectsComponent,
+        AchievementsComponent,
+    ],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {
   constructor(private location: Location) {}
