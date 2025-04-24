@@ -3,9 +3,7 @@ $red-color: #ff0000;
 $dark-red-color: #c00202;
 $green-color: #5cdb95;
 $dark-blue-color: #05386b;
-$white-color: #ffffff;
 $yellow-color: #FFEB3B;
-$black-color: #000000;
 $turq-color: #26ffdf;
 
 $transparent-color: rgba(255, 255, 255, 0.2);
@@ -77,12 +75,6 @@ $transparent-color: rgba(255, 255, 255, 0.2);
       min-width: 196px;
     }
   }
-}
-
-.bg-style{
-  background: linear-gradient(144deg, $black-color, #00d8b8, $black-color);
-  background-size: 400% 400%;
-  animation: Gradient 10s ease infinite;
 }
 
 @keyframes Gradient {

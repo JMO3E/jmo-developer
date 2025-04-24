@@ -1,20 +1,10 @@
 @import '../../styles.scss';
 
-.project-title-style{
-  font-weight: 600;
-  font-size: 3rem;
-  padding-bottom: 2px;
-
-  @extend %white-font-style;
-}
-
 .project-card-style {
-  width: 20rem;
+  background-color: white;
 
-  @extend %default-container-style;
-
-  transition: transform 0.3s ease;
-  transform: scale(1) translateZ(0);
+  padding: 0.875rem 1rem;
+  text-decoration: none;
 
   padding: 0.875rem 0.5rem;
   text-decoration: none;
@@ -23,10 +13,11 @@
     padding: 1rem;
 
     .card-image {
+      background-color: black;
+      border-radius: 12px;
       img {
-        height: 9rem;
-        width: 100%;
-        border-radius: 12px;
+        height: 14rem;
+        width: 90%;
       }
     }
 
@@ -41,9 +32,8 @@
       }
 
       .card-paragraph {
-        color: #f1f8fc;
         font-size: 1rem;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 1.25;
       }
     }
@@ -52,10 +42,6 @@
       @extend %button-credential-style;
     }
   }
-}
-
-.project-card-style:hover{
-  transform: scale(1.05) translateZ(0);
 }
 
 @media only screen and (max-width: 600px) {
