@@ -1,9 +1,16 @@
 // Main Colors
-$base-color: #5cdb95;
-$secondary-color: #05386b;
-$white-color: #f1f8fc;
+$red-color: #ff0000;
+$dark-red-color: #c00202;
+$green-color: #5cdb95;
+$dark-blue-color: #05386b;
+$yellow-color: #FFEB3B;
+$turq-color: #26ffdf;
 
 $transparent-color: rgba(255, 255, 255, 0.2);
+
+* {
+  font-family: BF_Modernista_Solid-Medium, Purista-Bold, sans-serif;
+}
 
 %default-container-style {
   background: $transparent-color;
@@ -13,7 +20,7 @@ $transparent-color: rgba(255, 255, 255, 0.2);
 }
 
 %white-font-style {
-  background: linear-gradient(135deg,hsla(0,0%,100%,0) 56%,#acacab 98%),linear-gradient(25deg,#f1f8fc 23%,#fff 60%);
+  background: linear-gradient(135deg,hsla(0,0%,100%,0) 56%,#acacab 98%),linear-gradient(25deg,#030404 23%,#000000 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -25,7 +32,7 @@ $transparent-color: rgba(255, 255, 255, 0.2);
   .button-credential {
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(144deg,$base-color, #5B42F3 50%,$secondary-color);
+    background-image: linear-gradient(144deg, $red-color, $yellow-color 50%, $turq-color);
     border: 0;
     border-radius: 0.5rem;
     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
@@ -67,5 +74,17 @@ $transparent-color: rgba(255, 255, 255, 0.2);
       font-size: 24px;
       min-width: 196px;
     }
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }

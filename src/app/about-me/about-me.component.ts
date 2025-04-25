@@ -9,13 +9,12 @@ import Typed from 'typed.js';
 })
 export class AboutMeComponent {
   ngOnInit() {
-    const options = {
-      strings: ['Software Developer', 'IOT Enthusiast'],
-      typeSpeed: 50,
-      backSpeed: 50,
-      loop: true,
-    };
-
-    const typed = new Typed('.iam-element', options);
+    // const options = {
+    //   strings: ['Software Developer', 'IOT Enthusiast'],
+    //   typeSpeed: 50,
+    //   backSpeed: 50,
+    //   loop: true,
+    // };
+    // const typed = new Typed('.iam-element', options);
   }
 }
