@@ -1,27 +1,12 @@
 @import '../../styles.scss';
 
-.skills-title-style {
-  font-weight: 600;
-  font-size: 3rem;
-  padding-bottom: 2px;
-
-  @extend %white-font-style;
-}
-
 .skill-card-style {
-  width: 20rem;
-  height: 22rem;
-
-  @extend %default-container-style;
-
-  transition: transform 0.3s ease;
-  transform: scale(1) translateZ(0);
+  background-color: white;
 
   padding: 0.875rem 1rem;
   text-decoration: none;
 
   .skill-card-title {
-    text-align: center;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 
@@ -32,22 +17,9 @@
   }
 
   .skill-card-content {
-    font-size: 1.2rem;
-    font-weight: 400;
-
-    li {
-      list-style-type:none;
-
-      .icon-images {
-        width: 2.2rem;
-      }
-    }
-
+    font-size: 1rem;
+    font-weight: 500;
   }
-}
-
-.skill-card-style:hover{
-  transform: scale(1.05) translateZ(0);
 }
 
 @media only screen and (max-width: 600px) {

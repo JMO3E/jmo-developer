@@ -1,23 +1,24 @@
 @import '../../styles.scss';
 
 .landing-section {
-  height: 100vh;
+  height: 90vh;
+}
 
-  .landing-title {
-    font-size: clamp(3.5rem, 8vw, 6rem);
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: -0.03rem;
-    padding: 0.9375rem;
-    margin-bottom: 5rem;
-  }
+.landing-title {
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.03rem;
+  padding: 0.9375rem;
+  color: white;
+}
 
-  .landing-subtitle {
-    font-weight: 400;
-    padding-bottom: 6px;
-  }
+.landing-subtitle {
+  font-weight: 400;
+  padding-bottom: 6px;
+  color: white;
+}
 
-  h1 {
-    @extend %white-font-style;
-  }
+h1 {
+  color: black;
 }
