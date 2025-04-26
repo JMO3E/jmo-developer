@@ -1,48 +1,101 @@
 @import '../../styles.scss';
 
-.project-card-style {
-  background-color: white;
+// .project-card-style {
+//   background-color: white;
 
-  padding: 0.875rem 1rem;
-  text-decoration: none;
+//   padding: 0.875rem 0.5rem;
+//   text-decoration: none;
 
-  padding: 0.875rem 0.5rem;
-  text-decoration: none;
+//   .card-content {
+//     padding: 1rem;
 
-  .card-content {
-    padding: 1rem;
+//     .card-image {
+//       background-color: black;
+//       border-radius: 12px;
+//       img {
+//         height: 14rem;
+//         width: 90%;
+//       }
+//     }
 
-    .card-image {
-      background-color: black;
-      border-radius: 12px;
-      img {
-        height: 14rem;
-        width: 90%;
-      }
-    }
+//     .card-info {
+//       height: 9.4rem;
+//       .card-title {
+//         text-align: center;
+//         font-size: 1.4rem;
+//         margin-top: 1rem;
+//         margin-bottom: 1.5rem;
+//         font-weight: 600;
+//       }
 
-    .card-info {
-      height: 9.4rem;
-      .card-title {
-        text-align: center;
-        font-size: 1.4rem;
-        margin-top: 1rem;
-        margin-bottom: 1.5rem;
-        font-weight: 600;
-      }
+//       .card-paragraph {
+//         font-size: 1rem;
+//         font-weight: 500;
+//         line-height: 1.25;
+//       }
+//     }
 
-      .card-paragraph {
-        font-size: 1rem;
-        font-weight: 500;
-        line-height: 1.25;
-      }
-    }
+//     .card-button {
+//       @extend %button-credential-style;
+//     }
+//   }
+// }
 
-    .card-button {
-      @extend %button-credential-style;
-    }
+.card-image {
+  background-color: black;
+  border-radius: 10px;
+  margin-top: 0.7rem;
+  height: 14rem;
+
+  img {
+    width: 100%;
+    border-radius: 20px;
   }
 }
+
+.card-title {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.card-paragraph {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+}
+
+.card-button {
+  @extend %button-credential-style;
+}
+
+// .card-content {
+//   padding: 1rem;
+
+//   .card-info {
+//     height: 9.4rem;
+//     .card-title {
+//       text-align: center;
+//       font-size: 1.4rem;
+//       margin-top: 1rem;
+//       margin-bottom: 1.5rem;
+//       font-weight: 600;
+//     }
+
+//     .card-paragraph {
+//       font-size: 1rem;
+//       font-weight: 500;
+//       line-height: 1.25;
+//     }
+//   }
+
+//   .card-button {
+//     @extend %button-credential-style;
+//   }
+// }
 
 @media only screen and (max-width: 600px) {
   .project-title-style{
