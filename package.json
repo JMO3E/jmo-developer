@@ -35,7 +35,7 @@
     "typed.js": "^2.1.0",
     "typescript": "^5.4.5",
     "undici": "^6.19.2",
-    "webpack": "^5.94.0",
+    "webpack": "^5.104.1",
     "zone.js": "^0.15.0"
   },
   "devDependencies": {
